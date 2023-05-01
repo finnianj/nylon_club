@@ -18,7 +18,7 @@
 
 body{
   font-family: 'Lora', serif;
-  color: red;
+  color: #eb463b;
   background-color: rgb(255, 248, 239);
 }
 
@@ -41,7 +41,7 @@ body{
   position: fixed;
   width: 100%;
   top: 0;
-  border-bottom: 2px solid red;
+  border-bottom: 2px solid #eb463b;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
