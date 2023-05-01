@@ -20,10 +20,16 @@
     <% @upcoming_shows.each do |show| %>
         <div class="show">
           <div class="show-info">
-            <%= show.date %>
-            <%= show.venue %>
-            <%= show.city %>
-            <%= show.country %>
+            <div class="show-date">
+              <%= show.date.strftime("%A %d %B %Y").upcase%>
+            </div>
+            <div class="show-loc">
+              <%= show.city.upcase %>,
+              <%= show.country.upcase %>
+            </div>
+            <div class="show-venue">
+              <%= show.venue.upcase %>
+            </div>
           </div>
         </div>
       <% end %>
@@ -33,15 +39,16 @@
       <% @past_shows.each do |show| %>
         <div class="show">
           <div class="show-info">
-          <div class="show-date">
-            <%= show.date.strftime("%A %d %B %Y").upcase%> 
-          </div>
-          <div class="show-loc">
-            <%= show.city.upcase %>,
-            <%= show.country.upcase %>
-          </div>
-          <div class="show-venue">
-            <%= show.venue.upcase %>
+            <div class="show-date">
+              <%= show.date.strftime("%A %d %B %Y").upcase%>
+            </div>
+            <div class="show-loc">
+              <%= show.city.upcase %>,
+              <%= show.country.upcase %>
+            </div>
+            <div class="show-venue">
+              <%= show.venue.upcase %>
+            </div>
           </div>
         </div>
       <% end %>

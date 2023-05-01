@@ -19,18 +19,17 @@
 body{
   font-family: 'Lora', serif;
   color: red;
+  background-color: rgb(255, 248, 239);
 }
 
 #background{
   background-image: url('bg.jpg');
   background-size: contain;
   background-repeat: no-repeat;
-  /* position: absolute;
-   top: 50%;
-   left: 50%; */
-   width: 500px;
-   height: 500px;
-   margin: 20% auto;
+  background-position: center;
+  width: 60%;
+  height: 80vh;
+  margin: 7% auto;
    z-index: 1;
 }
 
@@ -38,7 +37,7 @@ body{
 /* navbar */
 
 #navbar{
-  background-color: white;
+  background-color: rgb(255, 248, 239);
   position: fixed;
   width: 100%;
   top: 0;
@@ -75,21 +74,20 @@ body{
 /* shows */
 
 .shows {
-  margin-top: 20%;
+  margin-top: 10%;
   margin-left: auto;
   margin-right: auto;
-  width: 50%;
-  border: 2px solid blue;
+  width: 80%;
 }
 
 #past-shows{
-  border: 2px solid red;
+  margin-top: 10%;
 }
 
 .show-info{
   display: flex;
   flex-direction: column;
-
+  margin: 5%;
 }
 
 .show-date{
