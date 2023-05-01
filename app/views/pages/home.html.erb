@@ -13,3 +13,22 @@
 
 
 <div id='background'></div>
+
+<div class="shows">
+  <div id="upcoming-shows">
+    UPCOMING SHOWS:
+  </div>
+  <div id="past-shows">
+    PAST SHOWS:
+      <% @past_shows.each do |show| %>
+        <div class="show">
+          <div class="show-info">
+            <%= show.date %>
+            <%= show.venue %>
+            <%= show.city %>
+            <%= show.country %>
+          </div>
+        </div>
+      <% end %>
+  </div>
+</div>

@@ -1,0 +1,13 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  venue: MyString
+  date: 2023-05-01 10:42:08
+  city: MyString
+  country: MyString
+
+two:
+  venue: MyString
+  date: 2023-05-01 10:42:08
+  city: MyString
+  country: MyString
