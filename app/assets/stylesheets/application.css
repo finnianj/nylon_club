@@ -17,7 +17,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,700&');
 
 body{
-  overflow-y: auto;
+  font-family: 'Lora', serif;
+  color: red;
 }
 
 #background{
@@ -45,8 +46,6 @@ body{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  color: red;
-  font-family: 'Lora', serif;
   font-size: large;
   z-index: 100;
 }
@@ -81,4 +80,24 @@ body{
   margin-right: auto;
   width: 50%;
   border: 2px solid blue;
+}
+
+#past-shows{
+  border: 2px solid red;
+}
+
+.show-info{
+  display: flex;
+  flex-direction: column;
+
+}
+
+.show-date{
+  font-size: 20px;
+}
+.show-loc{
+  font-size: 40px;
+}
+.show-venue{
+  font-size: 20px;
 }
