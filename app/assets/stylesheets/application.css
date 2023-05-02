@@ -13,7 +13,7 @@
  *= require_tree .
  *= require_self
  */
-@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,700&');
+@import "fonts.css";
 @import "body.css";
 @import "about.css";
 @import "shows.css";
