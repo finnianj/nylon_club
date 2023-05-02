@@ -23,7 +23,7 @@ body{
 }
 
 #background{
-  background-image: url('bg.jpg');
+  background-image: url('bg.png');
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -81,6 +81,7 @@ body{
 #flex-holder{
   display: flex;
   flex-direction: column;
+  margin: 10vw;
 /* align-items: end; */
 }
 
@@ -93,6 +94,7 @@ body{
   margin-right: auto; */
   align-self: flex-start;
   width: 100%;
+  font-size: 40px;
 }
 
 #past-shows{
@@ -102,7 +104,8 @@ body{
 .show-info{
   display: flex;
   flex-direction: column;
-  margin: 5%;
+  margin-left: 15%;
+  margin-top: 5%;
 }
 
 .show-date{
