@@ -70,6 +70,7 @@ body{
 
 .nav-item{
   padding: 10px;
+  cursor: pointer;
 }
 
 #nav-title{
