@@ -53,7 +53,7 @@ body{
   width: 50%;
   text-align: center;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
 }
 
 #spotify{
