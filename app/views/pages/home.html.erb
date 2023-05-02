@@ -1,12 +1,17 @@
 <div id="navbar">
   <div id="nav-left">
+    <a id="spotify" target="_blank" href="https://open.spotify.com/artist/2Cww0XdbVl4uvZUzjGIqRY?si=5PwRfRCBRtCtZdIpREwqeg" >
+      <%= image_tag("spotify.png", width: '40px') %>
+    </a>
     <div id="nav-title">NYLON CLUB</div>
   </div>
   <div id="nav-right">
-    <div class="nav-item">SHOWS</div>
-    <div class="nav-item">ABOUT</div>
-    <div class="nav-item">LISTEN</div>
-    <div class="nav-item">SHOP</div>
+    <div class="nav-item" id="nav-shows">SHOWS</div>
+    <div class="nav-item" id="nav-about">ABOUT</div>
+    <a target="_blank" href="https://open.spotify.com/artist/2Cww0XdbVl4uvZUzjGIqRY?si=5PwRfRCBRtCtZdIpREwqeg" style="text-decoration: none; color: #eb463b">
+      <div class="nav-item" id="nav-listen">LISTEN</div>
+    </a>
+    <div class="nav-item" id="nav-shop">SHOP</div>
   </div>
 
 </div>
@@ -14,43 +19,57 @@
 
 <div id='background'></div>
 
-<div class="shows">
-  <div id="upcoming-shows">
-    UPCOMING SHOWS:
-    <% @upcoming_shows.each do |show| %>
-        <div class="show">
-          <div class="show-info">
-            <div class="show-date">
-              <%= show.date.strftime("%A %d %B %Y").upcase%>
-            </div>
-            <div class="show-loc">
-              <%= show.city.upcase %>,
-              <%= show.country.upcase %>
-            </div>
-            <div class="show-venue">
-              <%= show.venue.upcase %>
+<div id="flex-holder">
+  <div class="shows">
+    <div id="upcoming-shows">
+      UPCOMING SHOWS:
+      <% @upcoming_shows.each do |show| %>
+          <div class="show">
+            <div class="show-info">
+              <div class="show-date">
+                <%= show.date.strftime("%A %d %B %Y").upcase%>
+              </div>
+              <div class="show-loc">
+                <%= show.city.upcase %>,
+                <%= show.country.upcase %>
+              </div>
+              <div class="show-venue">
+                <%= show.venue.upcase %>
+              </div>
             </div>
           </div>
-        </div>
-      <% end %>
+        <% end %>
+    </div>
+    <div id="past-shows">
+      PAST SHOWS:
+        <% @past_shows.each do |show| %>
+          <div class="show">
+            <div class="show-info">
+              <div class="show-date">
+                <%= show.date.strftime("%A %d %B %Y").upcase%>
+              </div>
+              <div class="show-loc">
+                <%= show.city.upcase %>,
+                <%= show.country.upcase %>
+              </div>
+              <div class="show-venue">
+                <%= show.venue.upcase %>
+              </div>
+            </div>
+          </div>
+        <% end %>
+    </div>
   </div>
-  <div id="past-shows">
-    PAST SHOWS:
-      <% @past_shows.each do |show| %>
-        <div class="show">
-          <div class="show-info">
-            <div class="show-date">
-              <%= show.date.strftime("%A %d %B %Y").upcase%>
-            </div>
-            <div class="show-loc">
-              <%= show.city.upcase %>,
-              <%= show.country.upcase %>
-            </div>
-            <div class="show-venue">
-              <%= show.venue.upcase %>
-            </div>
-          </div>
-        </div>
-      <% end %>
+
+  <div id="about">
+    <div id="about-title">ABOUT</div>
+    <div id="about-text">
+      NYLON CLUB IS THE SONIC BRAIN-CHILD OF GERMAN/AMERICAN DUO VALENTINA ALEXANDER AND DRAKE ELLIOTT. NYLON CLUB IS MANIC, SYNTHETIC AND DANCEABLE POST PUNK/NEW WAVE WITH CATCHY MELODIES THAT INTERTWINE WITH FRANTIC GUITARS. IN THE STYLE OF CLASSIC ROWDY PUNK MUSIC, THE DUO SUBVERTS OLD TROPES WITH EUPHONIOUS POP NUANCE. </div>
+    </div>
+  </div>
+
+
+  <div id="media-player">LISTEN
+  <iframe style="border-radius:12px" src="https://open.spotify.com/embed/artist/2Cww0XdbVl4uvZUzjGIqRY?utm_source=generator" width="50%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
   </div>
 </div>
