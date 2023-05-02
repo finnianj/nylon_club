@@ -18,3 +18,11 @@
 @import "about.css";
 @import "shows.css";
 @import "navbar.css";
+
+body{
+  /* font-family: 'Merriweather', serif; */
+  font-family: 'Lora', serif;
+  color: #eb463b;
+  background-color: rgb(255, 248, 239);
+}
+
