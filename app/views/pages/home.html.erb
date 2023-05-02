@@ -14,50 +14,52 @@
 
 <div id='background'></div>
 
-<div class="shows">
-  <div id="upcoming-shows">
-    UPCOMING SHOWS:
-    <% @upcoming_shows.each do |show| %>
-        <div class="show">
-          <div class="show-info">
-            <div class="show-date">
-              <%= show.date.strftime("%A %d %B %Y").upcase%>
-            </div>
-            <div class="show-loc">
-              <%= show.city.upcase %>,
-              <%= show.country.upcase %>
-            </div>
-            <div class="show-venue">
-              <%= show.venue.upcase %>
-            </div>
-          </div>
-        </div>
-      <% end %>
-  </div>
-  <div id="past-shows">
-    PAST SHOWS:
-      <% @past_shows.each do |show| %>
-        <div class="show">
-          <div class="show-info">
-            <div class="show-date">
-              <%= show.date.strftime("%A %d %B %Y").upcase%>
-            </div>
-            <div class="show-loc">
-              <%= show.city.upcase %>,
-              <%= show.country.upcase %>
-            </div>
-            <div class="show-venue">
-              <%= show.venue.upcase %>
+<div id="flex-holder">
+  <div class="shows">
+    <div id="upcoming-shows">
+      UPCOMING SHOWS:
+      <% @upcoming_shows.each do |show| %>
+          <div class="show">
+            <div class="show-info">
+              <div class="show-date">
+                <%= show.date.strftime("%A %d %B %Y").upcase%>
+              </div>
+              <div class="show-loc">
+                <%= show.city.upcase %>,
+                <%= show.country.upcase %>
+              </div>
+              <div class="show-venue">
+                <%= show.venue.upcase %>
+              </div>
             </div>
           </div>
-        </div>
-      <% end %>
+        <% end %>
+    </div>
+    <div id="past-shows">
+      PAST SHOWS:
+        <% @past_shows.each do |show| %>
+          <div class="show">
+            <div class="show-info">
+              <div class="show-date">
+                <%= show.date.strftime("%A %d %B %Y").upcase%>
+              </div>
+              <div class="show-loc">
+                <%= show.city.upcase %>,
+                <%= show.country.upcase %>
+              </div>
+              <div class="show-venue">
+                <%= show.venue.upcase %>
+              </div>
+            </div>
+          </div>
+        <% end %>
+    </div>
   </div>
-</div>
 
-<div id="about">
-  <div id="about-title">ABOUT</div>
-  <div id="about-text">
-    NYLON CLUB IS THE SONIC BRAIN-CHILD OF GERMAN/AMERICAN DUO VALENTINA ALEXANDER AND DRAKE ELLIOTT. NYLON CLUB IS MANIC, SYNTHETIC AND DANCEABLE POST PUNK/NEW WAVE WITH CATCHY MELODIES THAT INTERTWINE WITH FRANTIC GUITARS. IN THE STYLE OF CLASSIC ROWDY PUNK MUSIC, THE DUO SUBVERTS OLD TROPES WITH EUPHONIOUS POP NUANCE. VALENTINA ALEXANDER’S MELODIC VOCAL DELIVERY AND DRAKE ELLIOTT’S DEFIANT, WIREY GUITAR RIFFS ARE INTERLACED WITH CATCHY SYNTH LEADS.  </div>
+  <div id="about">
+    <div id="about-title">ABOUT</div>
+    <div id="about-text">
+      NYLON CLUB IS THE SONIC BRAIN-CHILD OF GERMAN/AMERICAN DUO VALENTINA ALEXANDER AND DRAKE ELLIOTT. NYLON CLUB IS MANIC, SYNTHETIC AND DANCEABLE POST PUNK/NEW WAVE WITH CATCHY MELODIES THAT INTERTWINE WITH FRANTIC GUITARS. IN THE STYLE OF CLASSIC ROWDY PUNK MUSIC, THE DUO SUBVERTS OLD TROPES WITH EUPHONIOUS POP NUANCE. </div>
+    </div>
   </div>
 </div>
