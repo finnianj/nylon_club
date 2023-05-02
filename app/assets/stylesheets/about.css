@@ -1,0 +1,18 @@
+/* about */
+
+#about{
+  width: 60%;
+  align-self: flex-end;
+  margin: 5%;
+}
+
+#about-title{
+  text-align: end;
+  font-size: 40px;
+  margin: 5%;
+}
+
+#about-text{
+  text-align: end;
+  font-size: 20px;
+}

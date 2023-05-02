@@ -1,0 +1,32 @@
+body{
+  font-family: 'Lora', serif;
+  color: #eb463b;
+  background-color: rgb(255, 248, 239);
+}
+
+
+#background{
+  background-image: url('bg.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 60%;
+  height: 80vh;
+  margin: 7% auto;
+  z-index: 1;
+}
+
+/* iframe */
+
+#media-player{
+  font-size: 40px;
+  align-self: flex-start;
+  margin: 5%;
+  display: flex;
+  flex-direction: column;
+}
+
+#media-player iframe{
+  margin: 5%;
+
+}
