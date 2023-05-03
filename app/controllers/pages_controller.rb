@@ -10,7 +10,16 @@ class PagesController < ApplicationController
 
   def destroy_show
     show = Show.find(params[:show])
-    raise
+    show.destroy!
+    redirect_to admin_path
+  end
+
+  def edit
+    redirect_to admin_path
+  end
+
+  def add
+    Show.create!(venue: params[:venue], city: params[:city], country: params[:country], date: params[:date])
     redirect_to admin_path
   end
 end
