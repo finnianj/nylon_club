@@ -21,9 +21,4 @@
 @import "navbar.css";
 @import "footer.css";
 
-body{
-  /* font-family: 'Merriweather', serif; */
-  font-family: 'Lora', serif;
-  color: #eb463b;
-  background-color: rgb(255, 248, 239);
-}
+

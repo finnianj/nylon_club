@@ -5,7 +5,7 @@
   position: fixed;
   width: 100%;
   top: 0;
-  border-bottom: 2px solid #eb463b;
+  border-bottom: 5px solid #eb463b;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -36,18 +36,34 @@
 .nav-item{
   padding: 10px;
   cursor: pointer;
+  font-size: 30px;
 }
 
 #nav-title{
   padding: 10px;
-  font-size: 30px;
+  font-size: 50px;
   align-self: center;
 }
 
-/* flex */
-#flex-holder{
-  display: flex;
-  flex-direction: column;
-  margin: 10vw;
-/* align-items: end; */
+@media (max-width: 800px) {
+
+  #nav-title{
+    font-size: 40px;
+  }
+
+  .nav-item{
+    font-size: 20px;
+  }
+  /* … */
+}
+@media (max-width: 650px) {
+
+  #nav-title{
+    font-size: 30px;
+  }
+
+  .nav-item{
+    font-size: 10px;
+  }
+  /* … */
 }
