@@ -10,6 +10,6 @@ const about = document.getElementById('about')
 const nav_shop = document.getElementById('nav-shop')
 
 nav_about.addEventListener('click', () => { window.scrollTo({top: (about.offsetTop - 80), behavior: "smooth" }) })
-nav_shows.addEventListener('click', () => { window.scrollTo({top: (shows.offsetTop - 80), behavior: "smooth" }) })
+nav_shows.addEventListener('click', () => { window.scrollTo({top: (shows.offsetTop - 150), behavior: "smooth" }) })
 // nav_shows.addEventListener('click', () => { window.scrollTo(0, shows.offsetTop - 80) })
 // nav_about.addEventListener('click', () => { window.scrollTo(0, .offsetTop - 80) })
