@@ -10,7 +10,14 @@
 }
 
 #past-shows{
-  margin-top: 10%;
+  align-self: flex-end;
+  margin: 5%;
+  font-size: 40px;
+  text-align: end;
+}
+
+#past-show-title{
+  text-align: start;
 }
 
 .show-info{

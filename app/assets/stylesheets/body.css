@@ -25,6 +25,7 @@ body{
   margin: 5%;
   display: flex;
   flex-direction: column;
+  width: 70%;
 }
 
 #media-player iframe{
