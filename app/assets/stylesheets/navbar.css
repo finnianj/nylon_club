@@ -38,6 +38,9 @@
   cursor: pointer;
   font-size: 30px;
 }
+.nav-item:hover {
+  opacity: 70%;
+}
 
 #nav-title{
   padding: 10px;
