@@ -1,1 +1,22 @@
-<h1>hi</h1>
+<div class="shows">
+    <div id="admin-shows">
+      <% @shows.each do |show| %>
+          <div class="show">
+            <div class="show-info">
+              <div class="show-date">
+                <%= show.date.strftime("%A %d %B %Y").upcase%>
+              </div>
+              <div class="show-loc">
+                <%= show.city.upcase %>,
+                <%= show.country.upcase %>
+              </div>
+              <div class="show-venue">
+                <%= show.venue.upcase %>
+              </div>
+              <%= link_to "Delete", delete_path(show), data: {turbo_method: :delete, turbo_confirm: "Are you sure?"}, class:"btn btn-danger btn-sm", id:"delete-button" %>
+
+            </div>
+          </div>
+        <% end %>
+    </div>
+  </div>
