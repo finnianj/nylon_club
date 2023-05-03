@@ -1,5 +1,7 @@
+<div id="home-link">
+  <%= link_to "Home", root_path, class:"btn btn-secondary btn-sm", id:"home-button" %>
+</div>
 <div id="admin-container">
-    <%= link_to "Home", root_path, class:"btn btn-secondary btn-sm", id:"home-button" %>
 
     <div id="admin-shows">
       <% @shows.each do |show| %>
@@ -31,6 +33,6 @@
         <input type="text" id="country" name="country">
         <label for="date">Date:</label>
         <input type="date" id="date" name="date" class="form-item">
-        <input type="submit" value="Submit">
+        <input type="submit" value="Submit" id="submit">
       </form>
 </div>

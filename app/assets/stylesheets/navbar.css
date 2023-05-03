@@ -39,7 +39,8 @@
   font-size: 30px;
 }
 .nav-item:hover {
-  opacity: 70%;
+  opacity: 80%;
+  transition: 0.3s;
 }
 
 #nav-title{
