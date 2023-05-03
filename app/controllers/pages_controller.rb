@@ -5,7 +5,7 @@ class PagesController < ApplicationController
   end
 
   def admin
-    @shows = Show.all
+    @shows = Show.all.order('date DESC')
   end
 
   def destroy_show

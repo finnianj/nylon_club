@@ -1,5 +1,7 @@
-<div class="shows">
-    <%= link_to "Home", root_path, class:"btn btn-secondary btn-sm", id:"home-button" %>
+<div id="home-link">
+  <%= link_to "Home", root_path, class:"btn btn-secondary btn-sm", id:"home-button" %>
+</div>
+<div id="admin-container">
 
     <div id="admin-shows">
       <% @shows.each do |show| %>
@@ -16,21 +18,21 @@
                 <%= show.venue.upcase %>
               </div>
               <%= link_to "Delete", delete_path(show), data: {turbo_method: :delete, turbo_confirm: "Are you sure?"}, class:"btn btn-danger btn-sm", id:"delete-button" %>
-              <%# <%= link_to "Edit", edit_path(show), class:"btn btn-secondary btn-sm", id:"edit-button" %> 
+              <%# <%= link_to "Edit", edit_path(show), class:"btn btn-secondary btn-sm", id:"edit-button" %>
             </div>
           </div>
         <% end %>
     </div>
-
-    <form action="/welcometozelda/bitch" method="post">
-      <label for="venue">Venue:</label><br>
-      <input type="text" id="venue" name="venue"><br>
-      <label for="city">City:</label><br>
-      <input type="text" id="city" name="city">
-      <label for="country">Country:</label><br>
-      <input type="text" id="country" name="country">
-      <label for="date">Date:</label><br>
-      <input type="date" id="date" name="date">
-      <input type="submit" value="Submit">
-    </form>
+      <form action="/welcometozelda/bitch" method="post">
+        <h3>Add show:</h3>
+        <label for="venue">Venue:</label>
+        <input type="text" id="venue" name="venue">
+        <label for="city">City:</label>
+        <input type="text" id="city" name="city">
+        <label for="country">Country:</label>
+        <input type="text" id="country" name="country">
+        <label for="date">Date:</label>
+        <input type="date" id="date" name="date" class="form-item">
+        <input type="submit" value="Submit" id="submit">
+      </form>
 </div>

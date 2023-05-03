@@ -4,7 +4,7 @@ Rails.application.routes.draw do
   get '/welcometozelda/bitch', to: 'pages#admin', as: 'admin'
   post '/welcometozelda/bitch', to: 'pages#add', as: 'add'
 
-  delete 'lkbhjvkghgjbn132456754rfca', to: 'pages#destroy_show', as: 'delete'
+  delete 'lkbhjvkghgjbn132456754rfca/:show', to: 'pages#destroy_show', as: 'delete'
   get 'lhjvhfchkjhbnjklhwR4A5WGSFE', to: 'pages#edit', as: 'edit'
   get 'lhbkJHBBJBhjnll76yulhwm99SFE', to: 'pages#new', as: 'new'
 

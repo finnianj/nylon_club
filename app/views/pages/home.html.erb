@@ -11,7 +11,7 @@
     <%# <a target="_blank" href="https://open.spotify.com/artist/2Cww0XdbVl4uvZUzjGIqRY?si=5PwRfRCBRtCtZdIpREwqeg" style="text-decoration: none; color: #eb463b">
       <div class="nav-item" id="nav-listen">LISTEN</div>
     </a> %>
-    <div class="nav-item" id="nav-shop">SHOP</div>
+    <%# <div class="nav-item" id="nav-shop">SHOP</div> %>
   </div>
 
 </div>
@@ -78,9 +78,9 @@
 
 <div class="footer">
   <div class="footer-links">
-    <a href="#"><%= image_tag("footer/spot.png", width: '40px') %></a>
-    <a href="#"><%= image_tag("footer/gram.png", width: '40px') %></a>
-    <a href="#"><%= image_tag("footer/bandcamp.png", width: '40px')%></a>
+    <a target="_blank" href="https://open.spotify.com/artist/2Cww0XdbVl4uvZUzjGIqRY?si=5PwRfRCBRtCtZdIpREwqeg"><%= image_tag("footer/spot.png", width: '40px') %></a>
+    <a target="_blank" href="https://www.instagram.com/nylon.club_/"><%= image_tag("footer/gram.png", width: '40px') %></a>
+    <a target="_blank" href="https://nylonclub.bandcamp.com/album/nylon-club"><%= image_tag("footer/bandcamp.png", width: '40px')%></a>
   </div>
   <div class="footer-copyright">
     © NYLON CLUB, 2023.
