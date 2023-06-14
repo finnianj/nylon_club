@@ -24,21 +24,32 @@
   <div class="shows">
     <div id="upcoming-shows">
       UPCOMING SHOWS:
-      <% @upcoming_shows.each do |show| %>
-          <div class="show">
-            <div class="show-info">
-              <div class="show-date">
-                <%= show.date.strftime("%A %d %B %Y").upcase%>
-              </div>
-              <div class="show-loc">
-                <%= show.city.upcase %>,
-                <%= show.country.upcase %>
-              </div>
-              <div class="show-venue">
-                <%= show.venue.upcase %>
+      <% if @upcoming_shows.length == 0 %>
+        <div class="show">
+          <div class="show-info">
+
+              <em>CURRENTLY NO UPCOMING SHOWS</em>
+
+
+          </div>
+        </div>
+      <% else %>
+        <% @upcoming_shows.each do |show| %>
+            <div class="show">
+              <div class="show-info">
+                <div class="show-date">
+                  <%= show.date.strftime("%A %d %B %Y").upcase%>
+                </div>
+                <div class="show-loc">
+                  <%= show.city.upcase %>,
+                  <%= show.country.upcase %>
+                </div>
+                <div class="show-venue">
+                  <%= show.venue.upcase %>
+                </div>
               </div>
             </div>
-          </div>
+          <% end %>
         <% end %>
     </div>
   </div>

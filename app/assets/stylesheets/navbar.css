@@ -1,11 +1,11 @@
 /* navbar */
 
 #navbar{
-  background-color: rgb(255, 248, 239);
+  background-color: rgb(255 234 208);
   position: fixed;
   width: 100%;
   top: 0;
-  border-bottom: 5px solid #eb463b;
+  border-bottom: 0.3vw solid #eb463b;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -48,5 +48,3 @@
   font-size: 3vw;
   align-self: center;
 }
-
-
