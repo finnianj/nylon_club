@@ -36,7 +36,7 @@
 .nav-item{
   padding: 10px;
   cursor: pointer;
-  font-size: 30px;
+  font-size: 2vw;
 }
 .nav-item:hover {
   opacity: 80%;
@@ -45,29 +45,8 @@
 
 #nav-title{
   padding: 10px;
-  font-size: 50px;
+  font-size: 3vw;
   align-self: center;
 }
 
-@media (max-width: 800px) {
 
-  #nav-title{
-    font-size: 40px;
-  }
-
-  .nav-item{
-    font-size: 20px;
-  }
-  /* … */
-}
-@media (max-width: 650px) {
-
-  #nav-title{
-    font-size: 30px;
-  }
-
-  .nav-item{
-    font-size: 10px;
-  }
-  /* … */
-}
